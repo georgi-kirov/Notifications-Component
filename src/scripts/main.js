@@ -28,7 +28,7 @@ var notifications = (function () {
                 let notificationInList = $('.notification-'+notId);
                 let indexOfNotificationInList = $( ".notification" ).index(notificationInList);
                 let updatedNotification = createNotification(json[0]);
-                
+
                 // if is the first notification in the list
                 if (indexOfNotificationInList === 0) {
                     $('.notifications-list .notification-'+notId).remove();
@@ -72,7 +72,7 @@ var notifications = (function () {
                 }
                 jsonData = json;
                 $('.notifications-icon .notification-count').text(countNotifications(json));
-                // notificationExpire(json);
+                notificationExpire(json);
             }
         });
     }
@@ -84,7 +84,7 @@ var notifications = (function () {
         $('.notifications-list').html(createNotificationsList(notifications));
         // test image - the url in data img return status 404 and redirect
         $(".notification-image img").attr("src","./src/assets/images/promotion.png");
-        // notificationExpire(notifications);
+        notificationExpire(notifications);
     }
 
     function addNotification(notification) {
