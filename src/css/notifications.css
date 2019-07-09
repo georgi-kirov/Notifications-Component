@@ -1,0 +1,130 @@
+.wrapper {
+  background: black;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.wrapper .container {
+  position: absolute;
+  width: 50%;
+  min-width: 500px;
+  height: 80%;
+  background: #e3e4e6;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .container .notifications-icon {
+  position: absolute;
+  top: 10%;
+  right: 20%;
+}
+.wrapper .container .notifications-icon img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+.wrapper .container .notifications-icon .notification-count {
+  top: -10px;
+  position: absolute;
+  right: -10px;
+  min-width: 20px;
+  min-height: 20px;
+  background: red;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+}
+.wrapper .container .notifications {
+  position: absolute;
+  width: 400px;
+  top: 25%;
+  border-radius: 10px;
+  background: white;
+}
+.wrapper .container .notifications.hidden {
+  display: none;
+}
+.wrapper .container .notifications .notifications-title {
+  background: #5e99f7;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 6px;
+  padding: 10px 0 10px 20px;
+  margin: 0;
+}
+.wrapper .container .notifications .notifications-list {
+  background: white;
+  width: 100%;
+  overflow: auto;
+  max-height: 300px;
+  border-radius: 10px;
+}
+.wrapper .container .notifications .notifications-list::-webkit-scrollbar {
+  display: none;
+}
+.wrapper .container .notifications .notifications-list h3 {
+  margin: 0;
+  padding-bottom: 5px;
+  text-align: center;
+}
+.wrapper .container .notifications .notifications-list p {
+  margin: 0;
+  text-align: center;
+}
+.wrapper .container .notifications .notifications-list .notification {
+  margin: 0px 10px;
+  border-bottom: 1px solid black;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.wrapper .container .notifications .notifications-list .notification .notification-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.wrapper .container .notifications .notifications-list .notification .notification-info .notification-image {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  padding-right: 10px;
+  margin-left: 20px;
+}
+.wrapper .container .notifications .notifications-list .notification .notification-info .notification-image img {
+  width: 100%;
+  height: 100%;
+}
+.wrapper .container .notifications .notifications-list .notification .notification-info .notification-text {
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+}
+.wrapper .container .notifications .notifications-list .notification .notification-info .notification-text.image-text {
+  position: absolute;
+  width: 100%;
+}
+.wrapper .container .notifications .notifications-list .notification:last-child {
+  border-bottom: none;
+}
+.wrapper .container .notifications .notifications-list .notification .notification-expire {
+  align-self: flex-end;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.wrapper .container .notifications .notifications-list .notification .notification-expire div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/*# sourceMappingURL=notifications.css.map */
